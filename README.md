@@ -1,3 +1,24 @@
+**DIVISÃO PROJETO**
+
+Vinicius:
+Exercícios 1, 6, 11, 16
+
+Felipe:
+Exercícios 2, 7, 12, 17
+
+Gabriel:
+Exercícios 3, 8, 13
+
+Fabio:
+Exercícios 4, 9, 14
+
+Jonathan:
+Exercícios 5, 10, 15, 18
+
+
+
+
+
 **Passo a Passo: Criando um Projeto TypeScript no VS Code**
 
 **Pré-requisitos:**
