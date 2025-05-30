@@ -10,6 +10,11 @@ import { Par } from "./pares";
 import { Crescente } from "./crescente";
 import { Imc } from "./imc";
 import { contaString } from "./contaString";
+import { mediaNum } from "./media";
+import { Veiculo } from "./veiculo";
+import { contaVogais } from "./vogais";
+
+
 
 export function Controller(action: Number, rl: readline.Interface, done: () => void) {
     switch (action) {
@@ -20,7 +25,7 @@ export function Controller(action: Number, rl: readline.Interface, done: () => v
         parImpar(rl, done);
         break;
     case 3:
-        console.log("Outro trabalho 3");
+        mediaNum(rl, done);
         break;
     case 4:
         Fahrenheit(rl, done);
@@ -35,7 +40,7 @@ export function Controller(action: Number, rl: readline.Interface, done: () => v
         maiorNum(done);
         break;
     case 8:
-        console.log("Outro trabalho 8");
+        contaVogais(rl, done);
         break;
     case 9:
         calculadoraSimples(rl, done);
@@ -52,7 +57,7 @@ export function Controller(action: Number, rl: readline.Interface, done: () => v
         done()
         break;
     case 13:
-        console.log("Outro trabalho 13");
+        Veiculo();
         break;
     case 14:
         tabuadaSimples(rl, done);

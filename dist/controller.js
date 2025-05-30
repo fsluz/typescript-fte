@@ -12,6 +12,9 @@ const pares_1 = require("./pares");
 const crescente_1 = require("./crescente");
 const imc_1 = require("./imc");
 const contaString_1 = require("./contaString");
+const media_1 = require("./media");
+const veiculo_1 = require("./veiculo");
+const vogais_1 = require("./vogais");
 function Controller(action, rl, done) {
     switch (action) {
         case 1:
@@ -21,7 +24,7 @@ function Controller(action, rl, done) {
             (0, parImpar_1.parImpar)(rl, done);
             break;
         case 3:
-            console.log("Outro trabalho 3");
+            (0, media_1.mediaNum)(rl, done);
             break;
         case 4:
             (0, fahrenheit_1.Fahrenheit)(rl, done);
@@ -36,7 +39,7 @@ function Controller(action, rl, done) {
             (0, maiorNum_1.maiorNum)(done);
             break;
         case 8:
-            console.log("Outro trabalho 8");
+            (0, vogais_1.contaVogais)(rl, done);
             break;
         case 9:
             (0, calculadora_1.calculadoraSimples)(rl, done);
@@ -53,7 +56,7 @@ function Controller(action, rl, done) {
             done();
             break;
         case 13:
-            console.log("Outro trabalho 13");
+            (0, veiculo_1.Veiculo)();
             break;
         case 14:
             (0, tabuada_1.tabuadaSimples)(rl, done);
