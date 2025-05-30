@@ -21,7 +21,7 @@ Exercícios 5, 10, 15, 18
 ⚙️ Instalação
 Clone o repositório
 
-    git clone https://github.com/seu-usuario/seu-repositorio.git
+    git clone https://github.com/fsluz/typescript-fte.git
     cd typescript-fte
 
 Instale as dependências
