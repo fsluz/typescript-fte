@@ -1,7 +1,7 @@
 import * as readline from 'readline';
 
 
-export function calculadoraSimples(rl: readline.Interface) {
+export function calculadoraSimples(rl: readline.Interface, done: () => void) {
   rl.question('Digite o primeiro número: ', (valor1Input) => {
     rl.question('Digite o segundo número: ', (valor2Input) => {
       rl.question('Digite a operação desejada (+, -, *, /): ', (operacao) => {
@@ -40,8 +40,7 @@ export function calculadoraSimples(rl: readline.Interface) {
           default:
             console.log('Operação inválida. Use +, -, * ou /.');
         }
-
-        rl.close();
+        done();
       });
     });
   });

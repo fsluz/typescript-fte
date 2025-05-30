@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.parImpar = parImpar;
-function parImpar(rl) {
+function parImpar(rl, done) {
     rl.question("Digite um valor para verificar se é maior ou menor: ", (num) => {
         // converte o num para valores em int/number
         const numInt = parseInt(num);
@@ -14,6 +14,6 @@ function parImpar(rl) {
         const resto = numInt % 2;
         console.log(resto == 0 ? "O número é par" : "O número é impar");
         // fecha a questão
-        rl.close();
+        done();
     });
 }

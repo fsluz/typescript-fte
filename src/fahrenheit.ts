@@ -1,6 +1,6 @@
 import * as readline from 'readline';
 
-export function Fahrenheit(rl: readline.Interface) {
+export function Fahrenheit(rl: readline.Interface, done: () => void) {
   rl.question('Digite a temperatura em Celsius: ', (input) => {
     const celsius = parseFloat(input);
 
@@ -11,6 +11,6 @@ export function Fahrenheit(rl: readline.Interface) {
       console.log(`Temperatura em Fahrenheit: ${fahrenheit}`);
     }
 
-    rl.close();
+    done()
   });
 }

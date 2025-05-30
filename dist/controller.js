@@ -5,19 +5,19 @@ const parImpar_1 = require("./parImpar");
 const calculadora_1 = require("./calculadora");
 const fahrenheit_1 = require("./fahrenheit");
 const tabuada_1 = require("./tabuada");
-function Controller(action, rl) {
+function Controller(action, rl, done) {
     switch (action) {
         case 1:
             console.log("Outro trabalho 1");
             break;
         case 2:
-            (0, parImpar_1.parImpar)(rl);
+            (0, parImpar_1.parImpar)(rl, done);
             break;
         case 3:
             console.log("Outro trabalho 3");
             break;
         case 4:
-            (0, fahrenheit_1.Fahrenheit)(rl);
+            (0, fahrenheit_1.Fahrenheit)(rl, done);
             break;
         case 5:
             console.log("Outro trabalho 5");
@@ -32,7 +32,7 @@ function Controller(action, rl) {
             console.log("Outro trabalho 8");
             break;
         case 9:
-            (0, calculadora_1.calculadoraSimples)(rl);
+            (0, calculadora_1.calculadoraSimples)(rl, done);
             break;
         case 10:
             console.log("Outro trabalho 10");
@@ -47,7 +47,7 @@ function Controller(action, rl) {
             console.log("Outro trabalho 13");
             break;
         case 14:
-            (0, tabuada_1.tabuadaSimples)(rl);
+            (0, tabuada_1.tabuadaSimples)(rl, done);
             break;
         case 15:
             console.log("Outro trabalho 15");

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.tabuadaSimples = tabuadaSimples;
-function tabuadaSimples(rl) {
+function tabuadaSimples(rl, done) {
     rl.question('Digite um número para ver a tabuada: ', (input) => {
         const numero = parseInt(input);
         if (!isNaN(numero)) {
@@ -13,6 +13,6 @@ function tabuadaSimples(rl) {
         else {
             console.log('Por favor, digite um número válido.');
         }
-        rl.close();
+        done();
     });
 }

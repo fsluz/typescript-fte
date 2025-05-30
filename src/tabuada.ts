@@ -1,6 +1,6 @@
 import * as readline from 'readline';
 
-export function tabuadaSimples(rl: readline.Interface) {
+export function tabuadaSimples(rl: readline.Interface, done: () => void) {
   rl.question('Digite um número para ver a tabuada: ', (input) => {
     const numero = parseInt(input);
 
@@ -12,7 +12,7 @@ export function tabuadaSimples(rl: readline.Interface) {
     } else {
       console.log('Por favor, digite um número válido.');
     }
-
-    rl.close();
+    
+    done();
   });
 }

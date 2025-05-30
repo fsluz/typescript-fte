@@ -1,7 +1,7 @@
 import * as readline from 'readline';
 
 
-export function parImpar(rl: readline.Interface) {
+export function parImpar(rl: readline.Interface, done: () => void) {
     rl.question("Digite um valor para verificar se é maior ou menor: ", (num) => {
         // converte o num para valores em int/number
         const numInt = parseInt(num);
@@ -15,7 +15,7 @@ export function parImpar(rl: readline.Interface) {
         const resto = numInt % 2;
         console.log(resto == 0 ? "O número é par" : "O número é impar");        
         // fecha a questão
-        rl.close()
+        done()
     })
     
 }

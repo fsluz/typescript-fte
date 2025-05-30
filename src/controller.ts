@@ -5,19 +5,19 @@ import { Fahrenheit } from "./fahrenheit";
 import { tabuadaSimples } from "./tabuada";
 
 
-export function Controller(action: Number, rl: readline.Interface) {
+export function Controller(action: Number, rl: readline.Interface, done: () => void) {
     switch (action) {
          case 1:
         console.log("Outro trabalho 1");
         break;
     case 2:
-        parImpar(rl);
+        parImpar(rl, done);
         break;
     case 3:
         console.log("Outro trabalho 3");
         break;
     case 4:
-        Fahrenheit(rl);
+        Fahrenheit(rl, done);
         break;
     case 5:
         console.log("Outro trabalho 5");
@@ -32,7 +32,7 @@ export function Controller(action: Number, rl: readline.Interface) {
         console.log("Outro trabalho 8");
         break;
     case 9:
-        calculadoraSimples(rl);
+        calculadoraSimples(rl, done);
         break;
     case 10:
         console.log("Outro trabalho 10");
@@ -47,7 +47,7 @@ export function Controller(action: Number, rl: readline.Interface) {
         console.log("Outro trabalho 13");
         break;
     case 14:
-        tabuadaSimples(rl);
+        tabuadaSimples(rl, done);
         break;
     case 15:
         console.log("Outro trabalho 15");

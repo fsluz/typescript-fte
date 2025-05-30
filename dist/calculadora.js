@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculadoraSimples = calculadoraSimples;
-function calculadoraSimples(rl) {
+function calculadoraSimples(rl, done) {
     rl.question('Digite o primeiro número: ', (valor1Input) => {
         rl.question('Digite o segundo número: ', (valor2Input) => {
             rl.question('Digite a operação desejada (+, -, *, /): ', (operacao) => {
@@ -38,7 +38,7 @@ function calculadoraSimples(rl) {
                     default:
                         console.log('Operação inválida. Use +, -, * ou /.');
                 }
-                rl.close();
+                done();
             });
         });
     });
