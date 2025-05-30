@@ -3,9 +3,7 @@ import { Controller } from "./controller";
 
 const rl = readline.createInterface({input: process.stdin, output: process.stdout}); // cria a interface do readline input/output
 
-
 function showMenu() {
-
     rl.question("=== MENU DE EXERCÍCIOS ===\n\
         1 - Soma de dois números\n\
         2 - Verificar par ou ímpar\n\
@@ -33,9 +31,7 @@ function showMenu() {
                 rl.close();
                 return;
             }
-            
             Controller(option, rl, () => {showMenu()}); // execute as funções dentro de controller.ts
-
         });
 }
 showMenu()

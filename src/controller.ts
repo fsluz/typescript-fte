@@ -3,7 +3,9 @@ import { parImpar } from "./parImpar";
 import { calculadoraSimples } from "./calculadora";
 import { Fahrenheit } from "./fahrenheit";
 import { tabuadaSimples } from "./tabuada";
-
+import { maiorNum } from "./maiorNum";
+import { Aluno } from "./aluno";
+import { perguntarPalpite } from "./advinhacao";
 
 export function Controller(action: Number, rl: readline.Interface, done: () => void) {
     switch (action) {
@@ -26,7 +28,7 @@ export function Controller(action: Number, rl: readline.Interface, done: () => v
         console.log("Outro trabalho 6");
         break;
     case 7:
-        console.log("Outro trabalho 7");
+        maiorNum(done);
         break;
     case 8:
         console.log("Outro trabalho 8");
@@ -41,7 +43,9 @@ export function Controller(action: Number, rl: readline.Interface, done: () => v
         console.log("Outro trabalho 11");
         break;
     case 12:
-        console.log("Outro trabalho 12");
+        const aluno = new Aluno("Mariana", 220, "Análise e Desenvolvimento");
+        console.log(aluno.getAluno());
+        done()
         break;
     case 13:
         console.log("Outro trabalho 13");
@@ -56,7 +60,7 @@ export function Controller(action: Number, rl: readline.Interface, done: () => v
         console.log("Outro trabalho 16");
         break;
     case 17:
-        console.log("Outro trabalho 17");
+        perguntarPalpite(rl, done);
         break;
     case 18:
         console.log("Outro trabalho 18");
