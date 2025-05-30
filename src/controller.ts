@@ -6,6 +6,10 @@ import { tabuadaSimples } from "./tabuada";
 import { maiorNum } from "./maiorNum";
 import { Aluno } from "./aluno";
 import { perguntarPalpite } from "./advinhacao";
+import { Par } from "./pares";
+import { Crescente } from "./crescente";
+import { Imc } from "./imc";
+import { contaString } from "./contaString";
 
 export function Controller(action: Number, rl: readline.Interface, done: () => void) {
     switch (action) {
@@ -22,7 +26,7 @@ export function Controller(action: Number, rl: readline.Interface, done: () => v
         Fahrenheit(rl, done);
         break;
     case 5:
-        console.log("Outro trabalho 5");
+        Par(rl, done);
         break;
     case 6:
         console.log("Outro trabalho 6");
@@ -37,7 +41,7 @@ export function Controller(action: Number, rl: readline.Interface, done: () => v
         calculadoraSimples(rl, done);
         break;
     case 10:
-        console.log("Outro trabalho 10");
+        Crescente(done);
         break;
     case 11:
         console.log("Outro trabalho 11");
@@ -54,7 +58,7 @@ export function Controller(action: Number, rl: readline.Interface, done: () => v
         tabuadaSimples(rl, done);
         break;
     case 15:
-        console.log("Outro trabalho 15");
+        Imc(rl, done);
         break;
     case 16:
         console.log("Outro trabalho 16");
@@ -63,9 +67,10 @@ export function Controller(action: Number, rl: readline.Interface, done: () => v
         perguntarPalpite(rl, done);
         break;
     case 18:
-        console.log("Outro trabalho 18");
+        contaString(rl, done);
         break;
     default:
         console.log("Opção inválida");
+        done();
     }
 }

@@ -8,6 +8,10 @@ const tabuada_1 = require("./tabuada");
 const maiorNum_1 = require("./maiorNum");
 const aluno_1 = require("./aluno");
 const advinhacao_1 = require("./advinhacao");
+const pares_1 = require("./pares");
+const crescente_1 = require("./crescente");
+const imc_1 = require("./imc");
+const contaString_1 = require("./contaString");
 function Controller(action, rl, done) {
     switch (action) {
         case 1:
@@ -23,7 +27,7 @@ function Controller(action, rl, done) {
             (0, fahrenheit_1.Fahrenheit)(rl, done);
             break;
         case 5:
-            console.log("Outro trabalho 5");
+            (0, pares_1.Par)(rl, done);
             break;
         case 6:
             console.log("Outro trabalho 6");
@@ -38,7 +42,7 @@ function Controller(action, rl, done) {
             (0, calculadora_1.calculadoraSimples)(rl, done);
             break;
         case 10:
-            console.log("Outro trabalho 10");
+            (0, crescente_1.Crescente)(done);
             break;
         case 11:
             console.log("Outro trabalho 11");
@@ -55,7 +59,7 @@ function Controller(action, rl, done) {
             (0, tabuada_1.tabuadaSimples)(rl, done);
             break;
         case 15:
-            console.log("Outro trabalho 15");
+            (0, imc_1.Imc)(rl, done);
             break;
         case 16:
             console.log("Outro trabalho 16");
@@ -64,9 +68,10 @@ function Controller(action, rl, done) {
             (0, advinhacao_1.perguntarPalpite)(rl, done);
             break;
         case 18:
-            console.log("Outro trabalho 18");
+            (0, contaString_1.contaString)(rl, done);
             break;
         default:
             console.log("Opção inválida");
+            done();
     }
 }
