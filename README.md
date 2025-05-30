@@ -19,22 +19,20 @@ Exercícios 5, 10, 15, 18
 
 
 ⚙️ Instalação
+Clone o repositório
 
-    Clone o repositório:
+    git clone https://github.com/seu-usuario/seu-repositorio.git
+    cd typescript-fte
 
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+Instale as dependências
 
-    Instale as dependências:
-
-npm install
+    npm install
 
 🛠️ Como rodar
+Compile o projeto com:
 
-    Compile o projeto com:
+    npm run build
 
-npm run build
+Execute o código
 
-    Execute o menu:
-
-npm start
+    npm start
