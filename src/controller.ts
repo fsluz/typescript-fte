@@ -13,13 +13,17 @@ import { contaString } from "./contaString";
 import { mediaNum } from "./media";
 import { Veiculo } from "./veiculo";
 import { contaVogais } from "./vogais";
+import { criarPessoa } from "./criarPessoa";
+import { lerCincoNumeros } from "./lerCincoNumeros";
+import { somarDoisNumeros } from "./somarDoisNumeros";
+import { pedirSenha } from "./pedirSenha";
 
 
 
 export function Controller(action: Number, rl: readline.Interface, done: () => void) {
     switch (action) {
          case 1:
-        console.log("Outro trabalho 1");
+        somarDoisNumeros(rl, done);
         break;
     case 2:
         parImpar(rl, done);
@@ -34,7 +38,7 @@ export function Controller(action: Number, rl: readline.Interface, done: () => v
         Par(rl, done);
         break;
     case 6:
-        console.log("Outro trabalho 6");
+        lerCincoNumeros(rl, done);
         break;
     case 7:
         maiorNum(done);
@@ -49,7 +53,7 @@ export function Controller(action: Number, rl: readline.Interface, done: () => v
         Crescente(done);
         break;
     case 11:
-        console.log("Outro trabalho 11");
+        criarPessoa(rl, done);
         break;
     case 12:
         const aluno = new Aluno("Mariana", 220, "Análise e Desenvolvimento");
@@ -66,7 +70,7 @@ export function Controller(action: Number, rl: readline.Interface, done: () => v
         Imc(rl, done);
         break;
     case 16:
-        console.log("Outro trabalho 16");
+        pedirSenha(rl,done);
         break;
     case 17:
         perguntarPalpite(rl, done);
