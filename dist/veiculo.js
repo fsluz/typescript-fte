@@ -13,8 +13,9 @@ class Carro {
     }
 }
 // Função principal
-function Veiculo() {
+function Veiculo(done) {
     const c1 = new Carro(); // Criando um objeto do tipo Veiculo que instancia Carro
     c1.acelerar();
     c1.frear();
+    done();
 }

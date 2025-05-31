@@ -9,7 +9,7 @@ export function maiorNum(done: () => void) {
             maior = Number(valor[i]);
         }
     }
-    
+    console.log(valor)
     console.log(maior)
     done();
 }

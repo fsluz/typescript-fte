@@ -9,6 +9,7 @@ function maiorNum(done) {
             maior = Number(valor[i]);
         }
     }
+    console.log(valor);
     console.log(maior);
     done();
 }

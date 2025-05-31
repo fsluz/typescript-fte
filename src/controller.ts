@@ -61,7 +61,7 @@ export function Controller(action: Number, rl: readline.Interface, done: () => v
         done()
         break;
     case 13:
-        Veiculo();
+        Veiculo(done);
         break;
     case 14:
         tabuadaSimples(rl, done);

@@ -18,9 +18,10 @@ class Carro implements Veiculo {
 }
 
 // Função principal
-export function Veiculo() {
+export function Veiculo(done: () => void) {
   const c1: Veiculo = new Carro();  // Criando um objeto do tipo Veiculo que instancia Carro
 
   c1.acelerar();  
   c1.frear();     
+  done();
 }

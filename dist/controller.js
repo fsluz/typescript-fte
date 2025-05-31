@@ -15,10 +15,14 @@ const contaString_1 = require("./contaString");
 const media_1 = require("./media");
 const veiculo_1 = require("./veiculo");
 const vogais_1 = require("./vogais");
+const criarPessoa_1 = require("./criarPessoa");
+const lerCincoNumeros_1 = require("./lerCincoNumeros");
+const somarDoisNumeros_1 = require("./somarDoisNumeros");
+const pedirSenha_1 = require("./pedirSenha");
 function Controller(action, rl, done) {
     switch (action) {
         case 1:
-            console.log("Outro trabalho 1");
+            (0, somarDoisNumeros_1.somarDoisNumeros)(rl, done);
             break;
         case 2:
             (0, parImpar_1.parImpar)(rl, done);
@@ -33,7 +37,7 @@ function Controller(action, rl, done) {
             (0, pares_1.Par)(rl, done);
             break;
         case 6:
-            console.log("Outro trabalho 6");
+            (0, lerCincoNumeros_1.lerCincoNumeros)(rl, done);
             break;
         case 7:
             (0, maiorNum_1.maiorNum)(done);
@@ -48,7 +52,7 @@ function Controller(action, rl, done) {
             (0, crescente_1.Crescente)(done);
             break;
         case 11:
-            console.log("Outro trabalho 11");
+            (0, criarPessoa_1.criarPessoa)(rl, done);
             break;
         case 12:
             const aluno = new aluno_1.Aluno("Mariana", 220, "Análise e Desenvolvimento");
@@ -56,7 +60,7 @@ function Controller(action, rl, done) {
             done();
             break;
         case 13:
-            (0, veiculo_1.Veiculo)();
+            (0, veiculo_1.Veiculo)(done);
             break;
         case 14:
             (0, tabuada_1.tabuadaSimples)(rl, done);
@@ -65,7 +69,7 @@ function Controller(action, rl, done) {
             (0, imc_1.Imc)(rl, done);
             break;
         case 16:
-            console.log("Outro trabalho 16");
+            (0, pedirSenha_1.pedirSenha)(rl, done);
             break;
         case 17:
             (0, advinhacao_1.perguntarPalpite)(rl, done);

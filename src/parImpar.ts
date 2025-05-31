@@ -2,7 +2,7 @@ import * as readline from 'readline';
 
 
 export function parImpar(rl: readline.Interface, done: () => void) {
-    rl.question("Digite um valor para verificar se é maior ou menor: ", (num) => {
+    rl.question("Digite um valor para verificar se é par ou impar: ", (num) => {
         // converte o num para valores em int/number
         const numInt = parseInt(num);
         // verifica que se é not a number, se sim, não é valido!
